@@ -1,0 +1,45 @@
+{%extends "base.html" %}
+{% set active_page = 'form' %}
+{% block content %}
+
+<div class="pt-5 d-flex justify-content-center">
+    <div class="d-flex flex-column ">
+<h3>Enter the file to be hashed</h3>
+<form method="POST" enctype="multipart/form-data">
+    {{form.csrf_token}}
+    {{form.file(class='form-control mb-3')}}
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="SHA-256" checked>
+        <label class="form-check-label" for="exampleRadios1">
+            SHA-256
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="SHA-384">
+        <label class="form-check-label" for="exampleRadios2">
+            SHA-384
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="SHA-512">
+        <label class="form-check-label" for="exampleRadios3">
+            SHA-512
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="MD5">
+        <label class="form-check-label" for="exampleRadios3">
+            MD5
+        </label>
+    </div>
+    <br>
+    <div class="form-group">
+     {{form.submit(class='form-control-sm btn btn-success')}}
+    </div>
+</form>
+
+    </div>
+</div>
+
+{% endblock content%}

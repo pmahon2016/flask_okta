@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}userprofile{% endblock %}
+
+{% block content %}
+
+
+<div class="d-flex justify-content-center">
+    <div class="w-50 d-flex-col">
+        <h1 class=text-center">User Profile</h1>
+        <br>
+
+        <p>login ID: {{ g.user.profile.login }} </p>
+        <p>Account Name: {{ g.user.profile.firstName }} {{g.user.profile.lastName}}</p>
+        <p>Phone: {{ g.user.profile.mobilePhone }}</p>
+        <p>Account status: {{ g.user.status }}</p>
+        <p>Last logged in: {{ g.user.lastLogin }}</p>
+        <p> Your Access Token is:{{ token }}</p>
+        <p> Token Id is:{{ tokenid }}</p>
+
+        </p>
+    </div>
+</div>
+
+{% endblock content %}
