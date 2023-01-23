@@ -1,4 +1,4 @@
-# Python Flask and Okta cloud (Identity & Access Management)
+# Python Flask and Okta cloud (Cloud Identity Provider)
 
 This is a file hasing app that gives users the option to login so they may keep track of their previously requested hash values. 
 We’ll use a free account on Okta to register our web app so we can create, manage and maintain the users for the app
