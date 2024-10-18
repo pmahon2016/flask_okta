@@ -1,0 +1,3 @@
+pip install werkzeug==0.16.0
+pip install Werkzeug --upgrade
+pip install -U Flask-WTF
