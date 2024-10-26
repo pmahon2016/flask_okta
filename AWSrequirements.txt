@@ -71,7 +71,6 @@ s3transfer==0.10.1
 service-identity==24.1.0
 setuptools==68.1.2
 six==1.16.0
-sos==4.7.2
 ssh-import-id==5.11
 systemd-python==235
 Twisted==24.3.0
@@ -85,4 +84,4 @@ Werkzeug==3.0.6
 wheel==0.42.0
 WTForms==3.2.1
 zope.interface==6.1
-itsdangerous==2.0.1
+#itsdangerous==2.0.1
